@@ -1,5 +1,14 @@
 Идеи
 --
 
-RESTful API: PUT/POST/DELETE
-socket.io
+- RESTful API: PUT/POST/DELETE
+
+- socket.io
+
+- Влияние модели в нескольких view: автор todo, его статус
+
+- Роутинг: попап
+
+- Комментарии в попапе, связи между моделями
+
+- Рендеринг на клиенте, пререндеринг на сервере. CommonJS
