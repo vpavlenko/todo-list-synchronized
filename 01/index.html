@@ -5,10 +5,20 @@
     <title>Todo List</title>
 
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/swig/dist/swig.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="/main.js"></script>
 
     <link rel="stylesheet" href="/main.css"/>
+
+    <script id="todo-item-template" type="text/x-swig-template">
+        <div>
+            <div class="todo-list-item-author">{{ author }}</div>
+            <div class="todo-list-item-content">{{ content }}</div>
+        </div>
+    </script>
 </head>
+
 <body>
     <div class="pane pane-login">
         <div class="pane-login-block">
@@ -24,7 +34,16 @@
             <div id="main-username-view"></div>
         </nav>
         <main>
+            <div class="tasks">
 
+            </div>
+
+            <div class="new-task-div">
+                <label>
+                    Add new task
+                    <input type="text" id="new-task-input">
+                </label>
+            </div>
         </main>
     </div>
 </body>
