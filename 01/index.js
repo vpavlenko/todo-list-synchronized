@@ -32,14 +32,14 @@ io.on('connection', function (socket) {
         console.log('new task: ' + content);
 
         io.sockets.emit('new task', {
-            username: socket.username,
+            author: socket.username,
             content: content
         });
     });
 
     socket.on('login', function(username) {
         console.log('login: ' + username);
-        
+
         socket.username = username;
     });
 });

@@ -13,6 +13,7 @@ html, body {
 
 .pane-main {
     display: none;
+    padding: 50px;
 }
 
 .pane-login {
@@ -27,4 +28,17 @@ html, body {
     background-color: white;
     width: 300px;
     height: 200px;
+}
+
+.todo-list-item-author, .todo-list-item-content {
+    display: inline-block;
+    width: 100px;
+}
+
+.todo-list-item-author {
+    color: darkgray;
+}
+
+.tasks {
+    min-height: 200px;
 }
