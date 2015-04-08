@@ -1,4 +1,30 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pane {
+    /*height: 100%;*/
+    min-height: 100%;
+}
+
 .pane-main {
     display: none;
 }
 
+.pane-login {
+    background-color: black;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.pane-login-block {
+    padding: 20px;
+    margin: 0 auto;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+}
